@@ -2,7 +2,7 @@ require 'sinatra'
 
 # Hey dude, this is a comment
 get '/' do
-  "This is the root action!"
+  erb :root, layout: :index
 end
 
 get '/index' do
@@ -10,7 +10,7 @@ get '/index' do
 end
 
 get '/hello_world' do
-  erb :hello_world
+  erb :hello_world, layout: :index
 end
 
 get '/hey_dude' do
